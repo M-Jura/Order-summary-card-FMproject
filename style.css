@@ -1,0 +1,147 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+  p {
+    color: var(--desaturated-blue);
+    font-size: 0.9em;
+    line-height: 1.3rem;
+    font-weight: 500;
+  }   
+
+  h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 3em;
+  }
+  h2 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.5em;
+  }    
+  
+  .centerd {
+    height: 100vh;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background-image: url(images/illustration-hero.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;      
+    border-radius: 16px;        
+    max-width: 375px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 16px;
+  } 
+
+  .content {
+    padding: 2rem;
+    margin-top: 180px;
+  }
+
+  .content > div {
+    margin-top: 1rem;
+  }    
+
+  .payment-selection {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+  } 
+  
+  .payment-selection > div {
+    text-align:left;
+  }
+
+  .payment-selection .icon-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .payment-info {
+    padding-left: 0.5em; 
+  }
+  .payment.info h2 {
+    font-size: 1.2em;
+    font-weight: 700;         
+  }
+  .payment-info .price {
+    color: var(--desaturated-blue);
+    font-size: 1em;       
+  }
+  .payment-change a {
+    text-decoration: underline;
+    color: var(--bright-blue);
+  }
+  .payment-change a:hover {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.7em 1.5em;
+    border-radius: 10px;
+    text-align: center;
+  }    
+  .btn a {
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  .btn-pay {
+    background-color: var(--bright-blue);
+   }
+
+   .btn-pay:hover {
+    background-color: var(--dark-blue);
+  }
+
+  .btn-pay a {
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    
+  }
+
+  .btn-cancel a {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+  }
+  .btn-cancel a:hover {
+    color: var(--dark-blue);
+  }
